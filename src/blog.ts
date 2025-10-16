@@ -8,12 +8,19 @@ type blog = {
 };
 
 const blogs: blog[] = [
-	{ title: "Post A", 
-	  date: "Oct 1, 2025", 
-	  description: "Intro...", 
-	  image: "./images/a.png", 
+	{ title: "Matcha", 
+	  date: "Winter, 2024", 
+	  description: "Here is my attempt to recreate the Matcha Einspänners I have tried at the cafes I have visited in Los Angeles! After several attempts over the year, I finally found my favorite ratio for a homemade Matcha Einspänner. Through many trial and errors and experimenting with different oatmilk brands and sweetening syrups, I found the perfect balance of sweetness and umaminess.", 
+	  image: "../images/matcha.jpg", 
  	  imageAlt: "A", 
  	  slug: "post-a" },
+	{ title: "cow", 
+          date: "Oct 1, 2025", 
+          description: "Intro...",
+          image: "./images/a.png",
+          imageAlt: "A", 
+          slug: "post-a" },
+
 
 ];
 
@@ -27,7 +34,7 @@ function blogsRender() {
 		image.alt = blog.imageAlt;
 		
 		const div = document.createElement("div");
-		div.className = "blog-container";
+		div.className = "blog-box";
 		
 		const title = document.createElement("h2");
 		title.textContent = blog.title;
