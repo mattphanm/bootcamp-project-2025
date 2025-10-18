@@ -282,6 +282,12 @@ button:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);    
 }
 
+.blog-title {
+  display: block;
+  font-size: 35px;
+}
+
+
 .blog-image {
     max-width: 300px;
     border-radius: 15px;

@@ -15,7 +15,7 @@ const blogs: blog[] = [
 	  description: "Here is my attempt to recreate the Matcha Einspänners I have tried at the cafes I have visited in Los Angeles! After several attempts over the year, I finally found my favorite ratio for a homemade Matcha Einspänner. Through many trial and errors and experimenting with different oatmilk brands and sweetening syrups, I found the perfect balance of sweetness and umaminess.", 
 	  image: "../images/matcha.jpg", 
  	  imageAlt: "matcha", 
- 	  slug: "post-a" },
+ 	  slug: "matcha" },
 	{ 
 	  title: "Intra-Day Trading Futures", 
           date: "January 23, 2025", 
@@ -66,10 +66,11 @@ function blogsRender() {
     			div.classList.add("reverse");
   		}
 
-		const title = document.createElement("h2");
+		const title = document.createElement("a");
 		title.textContent = blog.title;
 	 	title.className = "blog-title";
-			
+		title.href = "../public/blogs/matcha.html";			
+
 		const date = document.createElement("time");
 		date.textContent = blog.date;
 		date.className = "blog-date";
@@ -80,7 +81,7 @@ function blogsRender() {
 					
 
 		const contentdiv = document.createElement("div");
-		contentdiv.className = "blog-content";		
+		contentdiv.className = "blog-content";				
 
 		div.append(media, contentdiv);	
 		if(blogContainer) {
