@@ -20,14 +20,14 @@ const blogs: Blog[] = [
 	  description: "Here is my attempt to recreate the Matcha Einspänners I have tried at the cafes I have visited in Los Angeles! After several attempts over the year, I finally found my favorite ratio for a homemade Matcha Einspänner. Through many trial and errors and experimenting with different oatmilk brands and sweetening syrups, I found the perfect balance of sweetness and umaminess.", 
 	  image: matcha, 
  	  imageAlt: "matcha", 
- 	  slug: "/matcha.html"},
+ 	  slug: "/matchaslug"},
 	{ 
 	  title: "Intra-Day Trading Futures", 
           date: "January 23, 2025", 
           description: "My most valuable asset and passion of mines for the past 3 years have been Intraday Trading. A love and hate relationship. Through years of practice, patience, and discipline, I have progressed to the point where I am now...",
           image: certificate,
           imageAlt: "cert", 
-          slug: "/certificate.html",
+          slug: "/certificateslug",
 	} 
 	/* 
 	  title: "Golf",
