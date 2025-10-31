@@ -15,7 +15,8 @@ export default function Home() {
           title={blog.title}
           description={blog.description}
           image={blog.image}
-          date={blog.date}
+          imageAlt={blog.imageAlt}    
+	  date={blog.date}
           text={blog.text}
       	  />
       )}
