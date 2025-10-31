@@ -1,0 +1,45 @@
+/* bootcamp */
+.blogContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+    
+}
+
+.blogBox {
+  display: flex;
+  gap: 30px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);    
+}
+
+.blogTitle {
+  display: block;
+  font-size: 35px;
+}
+
+.slugged:hover {
+  color: red;
+}
+.blogImage {
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.blogVideo {
+    max-width: 300px;
+    border-radius: 45px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.blogBox.reverse {
+  flex-direction: row-reverse; 
+}
+

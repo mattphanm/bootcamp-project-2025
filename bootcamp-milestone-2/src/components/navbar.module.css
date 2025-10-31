@@ -1,71 +1,75 @@
-
-/* navbar.module.css */
-
-/* Bar container */
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-
-  padding: 10px 0;
-
+/* bootcamp */
+.blog-container {
   display: flex;
-  align-items: center;
-  justify-content: center; /* center the nav (brand optional) */
-  gap: 24px;
-}
-
-/* Optional left-side title if you render one */
-.brand {
-  font-weight: 700;
-  color: #222;
-  margin-right: 12px;
-  white-space: nowrap;
-}
-
-/* Links container */
-.nav {
-  display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 30px;
   justify-content: center;
-  gap: 40px;               /* matches your old gap */
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  margin-top: 30px;
+ 
 }
 
-/* Next.js <Link> renders an <a> */
-.nav :global(a) {
-  color: #333;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  padding-bottom: 2px;     /* space for underline */
-  transition: color 0.3s ease, border-bottom-color 0.3s ease;
-  border-bottom: 2px solid transparent;
+.blog-box {
+  display: flex;
+  gap: 30px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.nav :global(a:hover),
-.nav :global(a:focus-visible) {
-  color: #007BFF;
-  border-bottom-color: #007BFF;
-  outline: none;
+.blog-title {
+  display: block;
+  font-size: 35px;
 }
 
-/* Optional active link class (if you add it from usePathname) */
-.active {
-  color: #007BFF;
-  border-bottom: 2px solid #007BFF;
+
+.blog-image {
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive: stack links on small screens */
-@media (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    gap: 15px;
-    padding: 10px;
-  }
+.blog-video {
+    max-width: 300px;
+    border-radius: 45px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.blog-box.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
 }
 
